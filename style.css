@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    background-color: lightgoldenrodyellow;
+    background-color: #ccccbd;
 }
 
 .container{
@@ -9,6 +9,10 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.navbar bg-light{
+    background-color: darkgrey;
 }
 
 .question-footer{
@@ -21,6 +25,8 @@ body{
 
 .quiz-card{
     width: 30rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -31,4 +37,30 @@ body{
 
 .answer-Card{
     padding-left: 20px;
+}
+
+.end-cart{
+    text-align: center;
+
+}
+
+.end-cart img{
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.end-cart p {
+    font-size: 50px;
+    color: darkgoldenrod
+}
+.progress{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.buttonRow{
+    padding-top: 15px;
 }

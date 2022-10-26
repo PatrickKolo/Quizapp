@@ -30,32 +30,66 @@
     </nav>
 
     <div class="container">
-        
+
 
         <div class="card quiz-card">
             <img id="quizImg" src="img/maze.png" class="card-img-top">
+
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar" role="progressbar" aria-label="Example with label"
+                    style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+
+
+            <div class="card-body" id="endscreen" style="display: none;">
+
+                <div class="end-cart">
+
+                    <p>Quiz beendet!</p>
+                    
+
+                    <div class="result-card" id="resultCard">
+
+                        Du hast <b id="number-of-correct-answers"> XXX </b> Fragen von <b id="AmountOfQuestions"> XXX
+                        </b> richtig beantwortet!
+                    </div>
+
+                    <div class="buttonRow">
+
+                        <button onclick="restartGame()" class="btn btn-outline-secondary">Erneut spielen</button>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
             <div id="cardBody" class="card-body">
                 <h5 id="questionText" class="card-title">Frage</h5>
 
-                <div  class="card answer-Card mb-2" onclick="answer('answer_1')">
+                <div class="card answer-Card mb-2" onclick="answer('answer_1')">
                     <div id="answer_1" class="card-body">
                         Antwort
                     </div>
                 </div>
 
-                <div  class="card answer-Card mb-2" onclick="answer('answer_2')">
+                <div class="card answer-Card mb-2" onclick="answer('answer_2')">
                     <div id="answer_2" class="card-body">
                         Antwort
                     </div>
                 </div>
 
-                <div  class="card answer-Card mb-2" onclick="answer('answer_3')">
+                <div class="card answer-Card mb-2" onclick="answer('answer_3')">
                     <div id="answer_3" class="card-body">
                         Antwort
                     </div>
                 </div>
 
-                <div  class="card answer-Card mb-2" onclick="answer('answer_4')">
+                <div class="card answer-Card mb-2" onclick="answer('answer_4')">
                     <div id="answer_4" class="card-body">
                         Antwort
                     </div>
@@ -66,7 +100,8 @@
                         <b id="currentQuestion">1</b> von <b id="NumberOfQuestions">5</b> Fragen
                     </span>
 
-                    <button class="btn btn-outline-secondary" id="next-button" disabled>Nächste Frage</button>
+                    <button onclick="nextQuestion()" class="btn btn-outline-secondary" id="next-button" disabled>Nächste
+                        Frage</button>
 
                 </div>
 
